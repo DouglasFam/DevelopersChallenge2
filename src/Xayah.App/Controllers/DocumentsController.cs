@@ -86,7 +86,7 @@ namespace Xayah.App.Controllers
 
             documentViewModel.Clear();
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Transactions");
       
         }
 

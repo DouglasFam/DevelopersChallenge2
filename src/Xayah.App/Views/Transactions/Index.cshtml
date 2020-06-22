@@ -20,19 +20,19 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            
-            <td>
-                @Html.DisplayFor(modelItem => item.TRNTYPE)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DTPOSTED)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.TRNAMT)
             </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TRNTYPE)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MEMO)
-            </td>          
+            </td>
         </tr>
 }
     </tbody>
