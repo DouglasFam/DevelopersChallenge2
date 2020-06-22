@@ -23,7 +23,7 @@ namespace Xayah.App.Controllers
         // GET: Transactions
         public ActionResult Index()
         {
-            return View(_mapper.Map<IEnumerable<TransactionViewModel>>(_transactionRepository.GetAllTransaction()));
+            return View(_mapper.Map<IEnumerable<TransactionViewModel>>(_transactionRepository.GetAllTransactions()));
         }
 
         // GET: Transactions/Details/5
