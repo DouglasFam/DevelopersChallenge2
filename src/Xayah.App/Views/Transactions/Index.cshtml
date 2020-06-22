@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Xayah.App.ViewModels.TransactionViewModel>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+
+
+<hr />
+<table class="table table-dark">
+    <thead class="thead-light">
+        <tr>
+        <tr>
+            <th scope="col">Transaction Date</th>
+            <th scope="col">Transaction Value</th>
+            <th scope="col">Transaction Type</th>
+            <th scope="col">Transatcion Description</th>
+        </tr>      
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.TRNTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DTPOSTED)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TRNAMT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MEMO)
+            </td>          
+        </tr>
+}
+    </tbody>
+</table>
