@@ -15,8 +15,6 @@ namespace Xayah.Business.Interface
 
         Task<List<TEntity>> GetAll();
 
-        List<Transaction> GetAllTransactions();
-
         Task Update(TEntity entity);
 
         Task Remove(int id);

@@ -35,7 +35,7 @@ namespace Xayah.App
 
             services.AddAutoMapper(typeof(Startup));
 
-            services.AddScoped<XayahContext>();
+            
             services.AddScoped<IDocumentRepository, DocumentRepository>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();
             services.AddScoped<ITransactionService, TransactionService>();

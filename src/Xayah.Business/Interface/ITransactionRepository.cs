@@ -8,6 +8,6 @@ namespace Xayah.Business.Interface
 {
     public interface ITransactionRepository : IRepository<Transaction>
     {
-      
+        List<Transaction> GetAllTransictions();
     }
 }

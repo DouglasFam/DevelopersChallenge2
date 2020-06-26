@@ -41,22 +41,7 @@ namespace Xayah.Data.Repository
             DbSet.Add(entity);
             await SaveChanges();
         }
-
-        public List<Transaction> GetAllTransactions()
-        {
-            var transactions = (from t in Db.Transactions
-                                orderby 1 descending
-                                select new Transaction
-                                {
-                                    TRNTYPE = t.TRNTYPE,
-                                    DTPOSTED = t.DTPOSTED,
-                                    TRNAMT = t.TRNAMT,
-                                    MEMO = t.MEMO
-
-
-                                });
-            return transactions.Distinct().ToList();
-        }
+      
 
         public virtual async Task Update(TEntity entity)
         {
